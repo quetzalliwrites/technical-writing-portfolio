@@ -16,7 +16,7 @@ The table below explains some useful `kubectl` commands to support you during de
 | `kubectl exec`        | Explore a container and review its internal log files or configurations.                              |
 | `kubectl debug`       | Create a pod copy that continues to run for troubleshooting, even if the container encounters errors. | 
 
-The table below explains some `kubectl` flags you'll want to use with the above commands.
+The table below explains some `kubectl` flags you'll want to use with these commands.
 
 | Command          | Flags                            | Description                                             |
 |------------------|----------------------------------|---------------------------------------------------------|
