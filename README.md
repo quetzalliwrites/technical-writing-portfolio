@@ -1,2 +1,2 @@
-# technical-writing-portfolio
-Quetzalli's growing technical writing portfolio.
+# Welcome to Quetzalli's technical writing portfolio!
+
