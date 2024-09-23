@@ -1,6 +1,8 @@
 # Introduction to Async/Await
 
-In JavaScript programming, 𝗔𝘀𝘆𝗻𝗰 starts tasks asynchronously, and 𝗔𝘄𝗮𝗶𝘁 patiently waits for them to complete before moving on.  The 𝘢𝘸𝘢𝘪𝘵 keyword pauses execution until the promise resolves. 
+In JavaScript programming, 𝗔𝘀𝘆𝗻𝗰 starts tasks asynchronously, and 𝗔𝘄𝗮𝗶𝘁 patiently waits for them to complete before moving on. 
+
+The 𝘢𝘸𝘢𝘪𝘵 keyword pauses execution until the promise resolves. 
 
 ## Functions not Returning a `Promise()`
 When you use 𝗮𝘀𝘆𝗻𝗰/𝗮𝘄𝗮𝗶𝘁, your function must return a 𝗣𝗿𝗼𝗺𝗶𝘀𝗲(). 
