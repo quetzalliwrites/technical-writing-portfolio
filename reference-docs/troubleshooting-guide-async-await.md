@@ -1,15 +1,15 @@
 # Introduction to Async/Await
 
-In JavaScript programming, 𝗔𝘀𝘆𝗻𝗰 starts tasks asynchronously, and 𝗔𝘄𝗮𝗶𝘁 patiently waits for them to complete before moving on. 
+In JavaScript programming, `𝗔𝘀𝘆𝗻𝗰` starts tasks asynchronously, and `𝗔𝘄𝗮𝗶𝘁` patiently waits for them to complete before moving on. 
 
-The 𝘢𝘸𝘢𝘪𝘵 keyword pauses execution until the promise resolves. 
+The `𝗔𝘄𝗮𝗶𝘁` keyword pauses execution until the promise resolves. 
 
 ## Functions not Returning a `Promise()`
-When you use 𝗮𝘀𝘆𝗻𝗰/𝗮𝘄𝗮𝗶𝘁, your function must return a 𝗣𝗿𝗼𝗺𝗶𝘀𝗲(). 
+When you use `𝗮𝘀𝘆𝗻𝗰/𝗮𝘄𝗮𝗶𝘁`, your function must return a `𝗣𝗿𝗼𝗺𝗶𝘀𝗲()`. 
 
-A 𝗣𝗿𝗼𝗺𝗶𝘀𝗲() in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation. It allows you to handle the resulting value or error when it becomes available.
+A `𝗣𝗿𝗼𝗺𝗶𝘀𝗲()` in JavaScript is an object that represents the eventual completion or failure of an asynchronous operation. It allows you to handle the resulting value or error when it becomes available.
 
-Without a 𝗣𝗿𝗼𝗺𝗶𝘀𝗲(), 𝗮𝘄𝗮𝗶𝘁 won’t work properly, and your code will behave unexpectedly. 
+Without a `𝗣𝗿𝗼𝗺𝗶𝘀𝗲()`, `𝗮𝘄𝗮𝗶𝘁` won’t work properly, and your code will behave unexpectedly. 
 
 ```js
 async function fetchSuperCoolData() {
@@ -28,7 +28,7 @@ async function fetchSuperCoolData() {
   getSuperCoolData();
 ```
 
-Always return the 𝗣𝗿𝗼𝗺𝗶𝘀𝗲() explicitly.
+Always return the `𝗣𝗿𝗼𝗺𝗶𝘀𝗲()` explicitly.
 
 ```js
 async function fetchSuperCoolData() {
@@ -46,7 +46,7 @@ getSuperCoolData();
 ```
 
 ## Forgetting `await`
-Forgetting to use 𝗮𝘄𝗮𝗶𝘁 when calling an 𝗮𝘀𝘆𝗻𝗰 function causes your program to move on before your 𝗣𝗿𝗼𝗺𝗶𝘀𝗲() resolves. 
+Forgetting to use `𝗮𝘄𝗮𝗶𝘁` when calling an `𝗮𝘀𝘆𝗻𝗰` function causes your program to move on before your `𝗣𝗿𝗼𝗺𝗶𝘀𝗲()` resolves. 
 
 Unfortunately, this mistake leads to incomplete or incorrect data.
 
@@ -65,7 +65,7 @@ console.log(data);
 processSuperCoolData();
 ```
 
-Always use 𝗮𝘄𝗮𝗶𝘁 when calling 𝗮𝘀𝘆𝗻𝗰 functions.
+Always use `𝗮𝘄𝗮𝗶𝘁` when calling `𝗮𝘀𝘆𝗻𝗰` functions.
 
 ```js
 async function fetchSuperCoolData() {
@@ -85,7 +85,7 @@ processSuperCoolData();
 ```
 
 ## Handling Errors with `try/catch`
-When working with 𝗮𝘀𝘆𝗻𝗰 functions, if you don’t wrap your 𝗮𝘄𝗮𝗶𝘁 calls in 𝘁𝗿𝘆/𝗰𝗮𝘁𝗰𝗵, unhandled errors can break the program.
+When working with `𝗮𝘀𝘆𝗻𝗰` functions, if you don’t wrap your `𝗮𝘄𝗮𝗶𝘁` calls in `𝘁𝗿𝘆/𝗰𝗮𝘁𝗰𝗵`, unhandled errors can break the program.
 
 ```js
 async function fetchSuperCoolData() {
@@ -104,7 +104,7 @@ getSuperCoolData();
 // Yikes! If an error occurs, it won't be caught. The program could crash!
 ```
 
-Always handle errors in 𝗮𝘀𝘆𝗻𝗰 functions with 𝘁𝗿𝘆/𝗰𝗮𝘁𝗰𝗵.
+Always handle errors in `𝗮𝘀𝘆𝗻𝗰` functions with `𝘁𝗿𝘆/𝗰𝗮𝘁𝗰𝗵`.
 
 ```js
 async function fetchSuperCoolData() {
@@ -127,8 +127,8 @@ getSuperCoolData();
 ```
 
 ## Using `Promise.all()`
-Using 𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗮𝗹𝗹() when making multiple async requests ensures:
-- 𝗮𝘀𝘆𝗻𝗰 requests run concurrently
+Using `𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗮𝗹𝗹()` when making multiple async requests ensures:
+- `𝗮𝘀𝘆𝗻𝗰` requests run concurrently
 - handling their results in parallel
 
 ```js
@@ -150,7 +150,7 @@ console.log(data1, data2);
 processSuperCoolData();
 ```
 
-Use 𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗮𝗹𝗹() to run requests concurrently.
+Use `𝗣𝗿𝗼𝗺𝗶𝘀𝗲.𝗮𝗹𝗹()` to run requests concurrently.
 
 ```js
 async function fetchSuperCoolData1() {
